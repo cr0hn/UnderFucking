@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 """
-GoLismero 2.0 - The web knife - Copyright (C) 2011-2013
+UnderFucking - The real vulnerable web site - Copyright (C) 2011-2013
 
 Authors:
-  Daniel Garcia Garcia a.k.a cr0hn | dani@iniqua.com
-  Mario Vilas | mvilas<@>gmail.com
+  Daniel Garcia Garcia a.k.a cr0hn | cr0hn@cr0hn.com
 
-Golismero project site: http://code.google.com/p/golismero/
-Golismero project mail: golismero.project@gmail.com
+UnderFucking project site: https://github.com/cr0hn/UnderFucking
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -208,8 +206,8 @@ the <a href="mailto:admin@localhost">webmaster</a>.
 
 <h2>Error 403</h2>
 <address>
-  <a href="/">Apache 2.4.1 GoLismero server</a><br />
-  <span>GoLismero App engine 2.0</span>
+  <a href="/">Apache 2.4.1 UnderFucking server</a><br />
+  <span>UnderFucking App engine 2.0</span>
 </address>
 </body>
 </html>"""]

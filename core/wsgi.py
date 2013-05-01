@@ -1,5 +1,7 @@
 """
-WSGI config for GoLismero sample-site project.
+WSGI config for UnderFucking project.
+
+UnderFucking project site: https://github.com/cr0hn/UnderFucking
 
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable

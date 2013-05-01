@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 """
-GoLismero 2.0 - The web knife - Copyright (C) 2011-2013
+UnderFucking - The real vulnerable web site - Copyright (C) 2011-2013
 
 Authors:
   Daniel Garcia Garcia a.k.a cr0hn | cr0hn<@>cr0hn.com
-  Mario Vilas | mvilas<@>gmail.com
 
-Golismero project site: http://code.google.com/p/golismero/
-Golismero project mail: golismero.project@gmail.com
+UnderFucking project site: https://github.com/cr0hn/UnderFucking
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -33,7 +31,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ADMINS = (
-    ('GoLismero Team', 'golismero.project@gmail.com'),
+    ('UnderFucking Team', 'cr0hn<@>cr0hn.com'),
 )
 
 MANAGERS = ADMINS
@@ -41,7 +39,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': './golismero.bd',                      # Or path to database file if using sqlite3.
+        'NAME': './underfucking.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',

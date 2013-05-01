@@ -16,9 +16,11 @@ Currently, only has these features:
 
 # How to run it?
 
-You need to be installed Django in your system. Them, to run the test web site, you must type in your shell:
+You DON'T need to be installed Django in your system, it's included in thirdparty_libs. 
 
-python manager.py runserver
+To run UnderFucking, you must type in your shell:
+
+python underfucking.py
 
 Now you can connect to the web writting in your browser:
 
