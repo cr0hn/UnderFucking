@@ -1,4 +1,4 @@
-# What's UndeFucking?
+# What's UnderFucking?
 
 The UnderFucking project is a web application that implements a series of vulnerabilities and odd behaviors, while at the same time mimicking a real website as much as possible.
 
