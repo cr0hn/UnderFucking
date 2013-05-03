@@ -27,9 +27,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #----------------------------------------------------------------------
 # Fix the module load path when running as a portable script and during installation.
 
-import os
 import sys
-from os import path
+from sys import version_info, exit
+if __name__ == "__main__":
+    if version_info < (2, 7) or version_info > (3, 0):
+        show_banner()
+        print "[!] You must use Python version 2.7"
+        exit(1)
+
+from os import path, getcwd, environ
 
 #
 # This code was borrowed from GoLismero Project
@@ -41,7 +47,7 @@ if __name__ == "__main__":
     except NameError:
         here = path.split(path.abspath(__file__))[0]
         if not here:  # if it fails use cwd instead
-            here = path.abspath(os.getcwd())
+            here = path.abspath(getcwd())
         thirdparty_libs = path.join(here, "thirdparty_libs")
         if path.exists(thirdparty_libs):
             if __name__ == "__main__":
@@ -56,7 +62,7 @@ if __name__ == "__main__":
 
 
     # Run it
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+    environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
     from django.core.management import execute_from_command_line
 
