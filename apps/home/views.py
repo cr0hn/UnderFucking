@@ -28,9 +28,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from django.template import RequestContext
 
-from backend.http import render_to_response_random_server
-from backend.url_generator import generate_random_url
-from backend.text import TextRandom, example_texs
+from underfucking.http import render_to_response_random_server
+from underfucking.url_generator import generate_random_url
+from underfucking.text import TextRandom, example_texs
 from random import Random, randint, random
 import datetime
 

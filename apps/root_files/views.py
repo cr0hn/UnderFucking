@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 """
 
 
-from backend.http import render_to_response_random_server
+from underfucking.http import render_to_response_random_server
 from django.template import RequestContext
 
 def robots_txt(request):

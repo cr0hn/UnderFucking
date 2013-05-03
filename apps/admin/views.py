@@ -29,7 +29,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 from django.shortcuts import render_to_response
 from django.http import HttpResponseForbidden
 from django.template import RequestContext
-from backend.http import generate_http_error_page
+from underfucking.http import generate_http_error_page
 from random import randint
 
 def admin_home(request):
