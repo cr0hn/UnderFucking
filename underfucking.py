@@ -36,6 +36,7 @@ if __name__ == "__main__":
         exit(1)
 
 from os import path, getcwd, environ
+import argparse
 
 #
 # This code was borrowed from GoLismero Project
@@ -60,10 +61,20 @@ if __name__ == "__main__":
                 sys.path.append(thirdparty_libs)
         _FIXED_PATH_ = True
 
+    # Add command line options
+    parser = argparse.ArgumentParser()
+
+    # Main options
+    gr_main = parser.add_argument_group("main options")
+    gr_main.add_argument("-p", "--listen-port", metavar="LISTEN_PORT", dest="listen_port", help="listen port (default 8080)", default=8080, type=int)
+    gr_main.add_argument("-l", "--listen-ip", metavar="LISTEN_IP", dest="listen_ip", help="listen ip (default 127.0.0.1)", default="127.0.0.1")
+
+    P = parser.parse_args()
+
+    m_listen = "%s:%s" % (P.listen_ip, str(P.listen_port))
 
     # Run it
     environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-
     from django.core.management import execute_from_command_line
 
-    execute_from_command_line([sys.argv[0],'runserver'])
+    execute_from_command_line([sys.argv[0],'runserver', m_listen])
