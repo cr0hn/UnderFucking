@@ -1,8 +1,12 @@
 # What's UndeFucking?
 
-UnderFucking project wants to be a vulnerable web site as real as possible. 
+The UnderFucking project is a web application that implements a series of vulnerabilities and odd behaviors, while at the same time mimicking a real website as much as possible.
 
-It's written entirely in Python using the Django framework.
+Unlike other similar projects, UnderFucking can generate a completely new random website on each invocation. It's also possible to imitate different web servers and technologies.
+
+Its purpose is to test web application security scanners, by feeding them a random but realistic website with a complex layout.
+
+Underfucking is written entirely in Python using the Django framework.
 
 # What vulnerabilities are implemented?
 
