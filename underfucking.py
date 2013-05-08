@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 import sys
 from sys import version_info, exit
 if __name__ == "__main__":
-    if version_info < (2, 7) or version_info > (3, 0):
+    if version_info < (2, 7) or version_info >= (3, 0):
         print "[!] You must use Python version 2.7"
         exit(1)
 
